@@ -1,0 +1,19 @@
+﻿@model AspFile.Models.Dto.UploadModel
+
+<p>@ViewBag.message</p>
+<div class="text-center">
+    <!--<form asp-controller="Home" asp-action="Upload1" enctype="multipart/form-data" method="post">-->
+    <!--<form asp-controller="Home" asp-action="Upload2" enctype="multipart/form-data" method="post">-->
+    <form asp-controller="Home" asp-action="Upload3" enctype="multipart/form-data" method="post">
+        <dl>
+            <dt>
+                <label>Archivo</label>
+            </dt>
+            <dd>
+                <input asp-for="MyFile" type="file">
+            </dd>
+        </dl>
+        <input type="submit" value="Cargar Archivo"/>
+    
+    </form>
+</div>
